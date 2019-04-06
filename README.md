@@ -10,7 +10,7 @@ MATLAB version: 2014b
 ```
 git clone "your desired directory"
 git clone https://github.com/comp4901j-course-project/coloring-edges.git
-cd coloring-edges
+cd coloring-edges/datatset
 ```
 ### 2.2 Download BSDS500 dataset
 ```
