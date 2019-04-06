@@ -17,8 +17,8 @@ cd coloring-edges/datatset
 python get_datasets.py
 ```
 dataset citation: 
-Contour Detection and Hierarchical Image Segmentation
-P. Arbelaez, M. Maire, C. Fowlkes and J. Malik.
+Contour Detection and Hierarchical Image Segmentation <br>
+P. Arbelaez, M. Maire, C. Fowlkes and J. Malik. <br>
 IEEE TPAMI, Vol. 33, No. 5, pp. 898-916, May 2011.
 
 ### 2.3 Get the input and output images
