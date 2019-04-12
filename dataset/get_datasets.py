@@ -1,8 +1,8 @@
 from six.moves.urllib import request
-import tarfile
+import zipfile
 import os
 
-url = "http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/BSR/BSR_full.tgz"
+url = "http://www.josiahwang.com/dataset/leedsbutterfly/leedsbutterfly_dataset_v1.0.zip"
 
 file_name = url.split('/')[-1]
 u = request.urlopen(url)
@@ -26,10 +26,9 @@ while True:
 f.close()
 
 print('Extracting: %s' % file_name)
-t = tarfile.open(file_name, "r:*")  
+t = zipfile.ZipFile(file_name, "r")  
 t.extractall(path = '.')  
 t.close()  
-
 print('Removing: %s' % file_name)
 os.remove(file_name)
 

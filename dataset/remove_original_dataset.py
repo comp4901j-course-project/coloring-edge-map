@@ -1,4 +1,4 @@
 import shutil
 
-print("Removing: BSR directory")
-shutil.rmtree("BSR")
+print("Removing: leedsbutterfly directory")
+shutil.rmtree("leedsbutterfly")
