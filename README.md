@@ -1,33 +1,35 @@
-# coloring-edges
+# coloring-edge-map
 
 ## 1. Prerequisites
-### "python" and "MATLAB"
-python version: 3.7 <br>
-MATLAB version: 2014b
+### 1.1 python
+python version: 3.7 (available [here](https://www.python.org/downloads/))
 
-## 2. Download BSDS500 dataset
+### 1.2 jupyter notebook
+Anaconda3 (available [here](https://www.anaconda.com/distribution/))
+
+### 1.3 python packages
+numpy, cv2, tensorflow
+
+## 2. Download Leeds Butterfly Dataset
 ### 2.1 Clone this repository
 ```
-git clone "your desired directory"
-git clone https://github.com/comp4901j-course-project/coloring-edges.git
-cd coloring-edges/datatset
+cd "your desired directory"
+git clone https://github.com/comp4901j-course-project/coloring-edge-map.git
+cd coloring-edges/dataset
 ```
-### 2.2 Download BSDS500 dataset
+### 2.2 Download Leeds Butterfly Dataset
 ```
 python get_datasets.py
 ```
-dataset citation: 
-Contour Detection and Hierarchical Image Segmentation <br>
-P. Arbelaez, M. Maire, C. Fowlkes and J. Malik. <br>
-IEEE TPAMI, Vol. 33, No. 5, pp. 898-916, May 2011.
+dataset available [here](http://www.josiahwang.com/dataset/leedsbutterfly/) <br>
+citation: <br>
+Josiah Wang, Katja Markert, and Mark Everingham <br>
+Learning Models for Object Recognition from Natural Language Descriptions <br>
+In Proceedings of the 20th British Machine Vision Conference (BMVC2009)
 
 ### 2.3 Get the input and output images
 ```
-# 1. get the input images
-run the matlab file "get_input_images.m" in the pre-installed MATLAB software
-
-# 2. get the output images
-python get_output_images.py
+python get_input_output.py
 ```
 
 ### 2.4 Remove the original dataset
