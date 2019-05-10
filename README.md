@@ -1,4 +1,4 @@
-# coloring-edge-map
+# picture-coloring
 
 ## 1. Prerequisites
 ### 1.1 python
