@@ -25,8 +25,8 @@ def crop(image, margin = 5):
 cwd = os.getcwd()
 path_imgs = cwd + "/leedsbutterfly/images"
 path_segs = cwd + "/leedsbutterfly/segmentations"
-path_input = cwd + "/input"
-path_output = cwd + "/output"
+path_input = cwd + "/cGANs_input"
+path_output = cwd + "/cGANs_output"
 
 # create input and output directory
 try:  
@@ -52,9 +52,6 @@ channels = 3
 dimension = (image_width, image_height)
 
 i = 0
-
-X = np.ndarray(shape = (N, image_height, image_width), dtype = np.float32)
-Y = np.ndarray(shape = (N, image_height, image_width, channels), dtype = np.float32)
 
 for filename in sorted(os.listdir(path_imgs)):
     if filename.endswith(".png"):
