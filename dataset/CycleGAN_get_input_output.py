@@ -103,8 +103,7 @@ for filename in sorted(os.listdir(path_imgs)):
         image_input_grayscale = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
         image_input_grayscale = np.repeat(image_input_grayscale.reshape(image_height, image_width, 1), 3, axis = 2)
         image_output = image
-        # cv2.imwrite(path_input_edge + "/" + filename.split(".")[0] + ".png", image_input_edge)
-        # cv2.imwrite(path_output + "/" + filename.split(".")[0] + ".png", image_output)
+        
         if i < 586:
             cv2.imwrite(path_input_edge_trainA + "/" + filename.split(".")[0] + ".png", image_input_edge)
             cv2.imwrite(path_input_grayscale_trainA + "/" + filename.split(".")[0] + ".png", image_input_grayscale)

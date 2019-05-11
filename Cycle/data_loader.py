@@ -6,10 +6,7 @@ import numpy as np
 from tqdm import tqdm
 import h5py
 
-datasets = ['ae_photos', 'apple2orange', 'summer2winter_yosemite', 'horse2zebra',
-            'monet2photo', 'cezanne2photo', 'ukiyoe2photo', 'vangogh2photo',
-            'maps', 'cityscapes', 'facades', 'iphone2dslr_flower', 'butterfly', 'butterfly_test',
-            'butterfly_edge_reverse']
+datasets = ['butterfly_edge', 'butterfly_grayscale']
 
 def read_image(path):
     image = imread(path)

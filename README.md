@@ -1,8 +1,8 @@
-# picture-coloring
+# Edge Map and Grayscale Picture Coloring
 
 ## 1. Prerequisites 
 ### 1.1 python & jupyter notebook
-python version: 3.7 (available [here](https://www.python.org/downloads/))
+python version: 3.7 (available [here](https://www.python.org/downloads/)) <br>
 Anaconda3 (available [here](https://www.anaconda.com/distribution/))
 
 ### 1.2 python packages
@@ -30,7 +30,7 @@ In Proceedings of the 20th British Machine Vision Conference (BMVC2009)
 
 ### 2.3 Get the input (edge map and grayscale) and output images
 ```
-python cGANs_get_input_output.py
+python GANs_cGANs_get_input_output.py
 python CycleGAN_get_input_output.py
 ```
 
@@ -42,24 +42,31 @@ python remove_original_dataset.py
 ### 3.1 Set up your Colab for your google drive account
 After the default set up, there will be a directory named "Colab Notebooks" under your google drive. This is the directory where your files need to be uploaded.
 ```
-For your setup, you can refer to:
+For your setup, you can refer to: https://course.fast.ai/start_colab.html
 ```
 ### 3.2 Things needed to be uploaded
 Things you need to uploaded to the directory "Colab Notebooks" on your google drive include:
 ```
-# create directory on Google Drive
-1. create a directory named "cGANs" under "Colab Notebooks"
-2. create a directory named "dataset" under "Colab Notebooks/cGANs"
+# upload ipynb files (GANs, cGANs, and CycleGAN models run script)
+1. upload "GANs.ipynb", "cGANs.ipynb", and "CycleGAN.ipynb" into "Colab Notebooks" directory.
 
-# cGANs model:
-1. upload cGANs.ipynb into "Colab Notebooks/cGANs" directory
-2. upload cGANs_input folder & cGANs_output folder into "Colab Notebooks/cGANs/dataset" directory
+# upload dataset for GANs and cGANs
+1. upload "input" folder & "output" folder into "Colab Notebooks" directory.
 
-# CycleGAN model:
-1. upload CycleGAN folder into "Colab Notebooks" directory
-2. upload trainA & testA in CycleGAN_input_edge folder into "Colab Notebooks/CycleGAN/dataset/butterfly_edge" directory
-3. upload trainB & testB in CycleGAN_output folder into "Colab Notebooks/CycleGAN/dataset/butterfly_edge" directory
-4. upload trainA & testA in CycleGAN_input_grayscale folder into "Colab Notebooks/CycleGAN/dataset/butterfly_grayscale" directory
-5. upload trainB & testB in CycleGAN_output folder into "Colab Notebooks/CycleGAN/dataset/butterfly_grayscale" directory
+# upload dataset for CycleGAN:
+1. On your local computer, copy "trainA" & "testA" in "CycleGAN_input_edge" folder to "Cycle/datasets/butterfly_edge" directory.
+2. On your local computer, copy "trainB" & "testB" in "CycleGAN_output_edge" folder to "Cycle/datasets/butterfly_edge" directory
+3. On your local computer, copy "trainA" & "testA" in "CycleGAN_input_grayscale" folder to "Cycle/datasets/butterfly_grayscale" directory.
+4. On your local computer, copy "trainB" & "testB" in "CycleGAN_output_grayscale" folder to "Cycle/datasets/butterfly_grayscale" directory
+5. upload "Cycle" folder into "Colab Notebooks" directory
 ```
 
+## 4. Run Our Models
+### 4.1 GANs Model
+Please go through GANs.ipynb on Colab.
+
+### 4.2 cGANs Model
+Please go through cGANs.ipynb on Colab
+
+### 4.3 CycleGAN Model
+Please go through CycleGAN.ipynb on Colab
