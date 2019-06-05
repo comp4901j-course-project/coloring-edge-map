@@ -69,4 +69,8 @@ Please go through GANs.ipynb on Colab.
 Please go through cGANs.ipynb on Colab
 
 ### 4.3 CycleGAN Model
-Please go through CycleGAN.ipynb on Colab
+Please go through CycleGAN.ipynb on Colab <br><br>
+VERY IMPORTANT: SciPy 1.3.0 is released on May 17th, 2019, and CoLab has updated the SciPy package accordingly. Our code is based on SciPy 1.2.1, so before running the model make sure you uninstall SciPy 1.3.0 and install SciPy 1.2.1 by running a cell which includes the following code:
+```
+!pip install Scipy==1.2.1
+```
